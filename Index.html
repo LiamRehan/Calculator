@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<title> Intro to Javascript </title>
+		<script>
+				function add2Numbers()
+				{
+					var numA = document.getElementById("num1").value *1.0;
+					var numB = document.getElementById("num2").value * 1.0;
+					document.getElementById("result").innerHTML= numA + numB;
+				}
+				function sub2Numbers()
+				{
+					var numA = document.getElementById("num1").value *1.0;
+					var numB = document.getElementById("num2").value * 1.0;
+					document.getElementById("result").innerHTML= numA - numB;
+				}
+				function mul2Numbers()
+				{
+					var numA = document.getElementById("num1").value *1.0;
+					var numB = document.getElementById("num2").value * 1.0;
+					document.getElementById("result").innerHTML= numA * numB;
+				}
+				function div2Numbers()
+				{
+					var numA = document.getElementById("num1").value *1.0;
+					var numB = document.getElementById("num1").value * 1.0;
+					document.getElementById("result").innerHTML= numA / numB;
+				}
+				function pot2Numbers()
+					{
+						var numA = document.getElementById('num1').value * 1.0;
+						var numB = document.getElementById('num2').value * 1.0;
+						document.getElementById("result").innerHTML=Math.pow(numA ,	numB);
+					}	
+				function log2Numbers() 
+				{
+				var numA = parseFloat(document.getElementById('num1').value);
+				var numB = parseFloat(document.getElementById('num2').value);
+				document.getElementById("result").innerHTML = Math.log (numA) / (numB);
+				}
+				function sqrt2Numbers() {
+				var numA = parseFloat(document.getElementById('num1').value);
+				var numB = parseFloat(document.getElementById('num2').value);
+				document.getElementById("result").innerHTML = Math.pow (numA, 1 / numB);
+			}
+		</script>
+		
+	</head>
+	<body>
+		<h1 id="myheading">
+			Calculator
+		</h1>
+			<form>
+				<label for="num1">First number:</label>
+				<input type="text" id="num1" name="num1"><br><br>
+				<label for="num2">Second number:</label>
+				<input type="text" id="num2" name="num2"><br><br>
+				
+			</form>
+		<p>
+		<button onclick="document.getElementById('num1'). value='irgendwos'">
+			Change the world 1
+		</button>
+		<button onclick="add2Numbers()">
+			Add
+		</button>
+		<button onclick="sub2Numbers()">
+			Sub
+		</button>
+		<button onclick="mul2Numbers()">
+			Mul
+		</button>
+		<button onclick="div2Numbers()">
+			Div
+		</button>
+		<button onclick="pot2Numbers()">
+			Pot
+		</button>
+		<button onclick="log2Numbers()">
+			log
+		</button>
+		<button onclick="sqrt2Numbers()">
+			Root
+		</button>
+		</p>
+		<p id="result" >
+		</p>
+	</body>
+	
+</html>	
+rabea Ahmad (ahmad.rabea@htleisenstadt.at)
